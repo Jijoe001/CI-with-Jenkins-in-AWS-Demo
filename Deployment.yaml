@@ -1,19 +1,19 @@
 apiVersion: apps/v1 
 kind: Deployment 
 metadata:
-  name: mytomcatpod 
+  name: bfsltomcat 
 spec:
   replicas: 2 
   selector:
    matchLabels:
-    app: mytomcatpod 
+    app: bfsltomcat 
   template:
     metadata: 
       labels:
-        app: mytomcatpod
+        app: bfsltomcat
     spec:
       containers:
-      - name: mytomcatpod
+      - name: bfsltomcat
         image: jijjoe001/sprint6dockerjenkinsgcloud:tagversion 
         ports:
         - containerPort: 8080
@@ -21,9 +21,9 @@ spec:
 apiVersion: v1 
 kind: Service 
 metadata:
-  name: mytomcatpod-svc 
+  name: bfsltomcat-svc 
   labels:
-    app: mytomcatpod 
+    app: bfsltomcat 
 spec:
   type: LoadBalancer 
   ports:
@@ -31,4 +31,4 @@ spec:
     port: 80
     targetPort: 8080 
   selector:
-    app: mytomcatpod
+    app: bfsltomcat
