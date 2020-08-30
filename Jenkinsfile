@@ -1,7 +1,7 @@
 pipeline {
         agent any
         environment {
-            registry = "jijoe001/sprint6dockerjenkinsgcloud"
+            registry = "jijjoe001/sprint6dockerjenkinsgcloud"
             registryCredential = 'dockerhubcredentials'
             dockerImage = ''
 		PROJECT_ID = 'savvy-mote-287309'
