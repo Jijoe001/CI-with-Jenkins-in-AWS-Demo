@@ -5,7 +5,7 @@ pipeline {
             registryCredential = 'jijjoe001'
             dockerImage = ''
 		PROJECT_ID = 'savvy-mote-287309'
- 		CLUSTER_NAME = 'sprint6-kubectl-cluster-gcloud'
+ 		CLUSTER_NAME = 'sprint6-kubectl-cluster-glcoud'
  		LOCATION = 'us-east4-a'
  		CREDENTIALS_ID = 'jijoekube'
         }
